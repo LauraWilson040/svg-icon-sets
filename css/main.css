@@ -18,16 +18,48 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin: 1.5rem;
+}
+
+section {
+  margin: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-weight: normal;
+}
+
 h3 {
   border: .2rem solid rgba(255, 255, 255, .7);
   color: rgba(255, 255, 255, .7);
-  padding: .5em;
+  font-weight: normal;
+  padding: 1em;
+}
+
+h3:hover {
+  color: #000;
 }
 
 @media only screen and (min-width: 38em) {
 
-  body {
+  h1 {
+    text-align: center;
+  }
 
+  section {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .icon {
+    display: grid;
   }
 
 }
