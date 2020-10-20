@@ -4,7 +4,10 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
+
   font-family: Overpass, sans-serif;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+  color: #fff;
 }
 
 *, *::before, *::after {
@@ -13,6 +16,12 @@ html {
 
 body {
   margin: 0;
+}
+
+h3 {
+  border: .2rem solid rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
+  padding: .5em;
 }
 
 @media only screen and (min-width: 38em) {
