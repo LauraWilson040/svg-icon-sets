@@ -5,8 +5,9 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
 
-  font-family: Overpass, sans-serif;
   background-image: linear-gradient(#ff9500, #ff5e3a);
+
+  font-family: Overpass, sans-serif;
   color: #fff;
 }
 
@@ -22,8 +23,13 @@ h1 {
   margin: 1.5rem;
 }
 
-section {
-  margin: 1.5rem;
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+  align-items: center;
 }
 
 h2 {
@@ -32,12 +38,15 @@ h2 {
 
 p {
   font-weight: normal;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 h3 {
   border: .2rem solid rgba(255, 255, 255, .7);
-  color: rgba(255, 255, 255, .7);
   font-weight: normal;
+  text-align: center;
+  margin: 1rem;
   padding: 1em;
 }
 
@@ -48,13 +57,28 @@ h3:hover {
 @media only screen and (min-width: 38em) {
 
   h1 {
+    padding-top: 1rem;
     text-align: center;
   }
 
-  section {
+  h2 {
+    text-align: center;
+    padding-left: 2rem;
+  }
+
+  p {
+    padding-left: 2rem;
+  }
+
+  h2, p, h3 {
+    display: inline-flex;
+  }
+
+  ul {
     justify-content: space-between;
     align-items: stretch;
     flex-direction: row;
+    padding-left: 0;
     display: flex;
   }
 
