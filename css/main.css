@@ -22,7 +22,12 @@ body {
 h1 {
   margin: 1.5rem;
   margin-bottom: 0;
-  padding-bottom: 0;
+}
+
+h2 {
+  padding-top: 0;
+  text-align: center;
+  font-weight: lighter;
 }
 
 ul {
@@ -35,15 +40,10 @@ ul li {
 }
 
 .icon {
-  padding: 0;
+  padding-bottom: 0;
   width: 8rem;
   height: 8rem;
   align-items: center;
-}
-
-h2 {
-  text-align: center;
-  font-weight: lighter;
 }
 
 p {
@@ -57,8 +57,8 @@ h3 {
   border: .2rem solid rgba(255, 255, 255, .7);
   font-weight: lighter;
   text-align: center;
-  margin: 1rem;
   padding: .75em;
+  margin: 1rem;
 }
 
 h3:hover {
@@ -68,44 +68,63 @@ h3:hover {
 @media only screen and (min-width: 38em) {
 
   body {
-    margin: 1.5rem;
+    margin: 1.4rem;
   }
 
   h1 {
     padding-bottom: 1rem;
-    padding-top: 1.5rem;
+    padding-top: .75rem;
     text-align: center;
   }
 
   h2 {
-    text-align: center;
+    display: inline-block;
+    padding-top: .75rem;
+    padding-bottom: 0;
+    text-align: left;
   }
 
-  h2, p, h3 {
-    display: inline-flex;
+  p {
+    font-weight: lighter;
+    padding-top: 0;
   }
 
   h3 {
     align-items: baseline;
+    font-weight: lighter;
     text-align: left;
   }
 
-  section {
-    column-gap: 6vmin;
-    padding-top: 1.5rem;
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
   }
 
-  ul {
-    justify-content: space-between;
-    align-items: stretch;
-    flex-direction: row;
-    padding-left: 0;
+  li {
+    flex-direction: column;
     display: flex;
   }
 
+}
+
+@media only screen and (min-width: 60em) {
+
+  body {
+    margin: 1.5rem;
+  }
+
+  h1 {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  h2 {
+    padding-top: 1rem;
+  }
+
   .icon {
-    display: grid;
-    justify-content: space-between;
+    padding-bottom: 1rem;
   }
 
 }
