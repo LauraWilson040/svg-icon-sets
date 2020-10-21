@@ -71,7 +71,8 @@ h3:hover {
   }
 
   h1 {
-    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
     text-align: center;
   }
 
@@ -90,6 +91,7 @@ h3:hover {
 
   section {
     column-gap: 6vmin;
+    padding-top: 1.5rem;
   }
 
   ul {
@@ -102,6 +104,7 @@ h3:hover {
 
   .icon {
     display: grid;
+    justify-content: space-between;
   }
 
 }
